@@ -25,5 +25,6 @@ def factorial(limiter):
             counter += 1
         return result
 
+
 n = factorial(number)
 print(factorial(number))
