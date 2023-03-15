@@ -14,8 +14,8 @@ coins = int(input("Сколько всего монет? Не вводите с�
 orel = reshka = 0
 # orel = int(input("Сколько из них лежат орлом?>> "))
 
-for coin in range(coins):
-    coin = int(input("Орёл(1) или Решка(0)?>> "))
+for i in range(coins):
+    coin = int(input(f"{i+1}я монета Орёл(1) или Решка(0)?>> "))
     if coin == 1:
         orel += 1
     else:
