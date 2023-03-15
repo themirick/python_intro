@@ -11,8 +11,6 @@ Output:    120
 
 """
 
-number = 3
-
 
 def factorial(limiter):
     if limiter == 0:
@@ -26,5 +24,6 @@ def factorial(limiter):
         return result
 
 
+number = 3
 n = factorial(number)
-print(factorial(number))
+print(f"Факториал от числа {number} >> {n}")
