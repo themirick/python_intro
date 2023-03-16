@@ -13,9 +13,7 @@
 
 
 def create_list(length):
-    result = []
-    for i in range(length):
-        result.append(i+1)
+    result = [i + 1 for i in range(length)]
     return result
 
 
