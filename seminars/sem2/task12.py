@@ -33,3 +33,13 @@ def number_guesser(numbers_sum, numbers_product):
 
 
 number_guesser(7, 12)
+
+#
+# x = int(input())
+# y = int(input())
+# def number_guesser(x, y):
+# for i in range(x):
+#     for j in range(y):
+#         if x == i + j and y == i * j:
+#             print(i, j)
+
