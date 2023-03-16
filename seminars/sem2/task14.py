@@ -30,3 +30,10 @@ def two_degree_counter(number):
 
 
 two_degree_counter(500)
+
+
+# def two_degree_counter(number):
+#     i = 0
+#     while 2 ** i < number:
+#         print(2 ** i)
+#         i += 1
