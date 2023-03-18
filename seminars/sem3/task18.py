@@ -19,8 +19,8 @@ def create_list(length):
 
 
 def closest_finder(list1, number):
-    bcounter = 0
-    scounter = 0
+    big_counter = 0
+    small_counter = 0
 
     flag = True
     i = 0
@@ -29,18 +29,18 @@ def closest_finder(list1, number):
         if list1[i] == number:
             break
 
-        elif list1[i] < number and number - list1[i] < scounter:
-            scounter = number - list1[i]
+        elif list1[i] < number and number - list1[i] < small_counter:
+            small_counter = number - list1[i]
 
-        elif list1[i] > number and list1[i] - number < bcounter:
-            bcounter = list1[i] - number
+        elif list1[i] > number and list1[i] - number < big_counter:
+            big_counter = list1[i] - number
 
         i += 1
 
-    if bcounter < scounter:
-        print(f'The nearest number is >> {number+ bcounter}')
+    if big_counter < small_counter:
+        print(f'The nearest number is >> {number + big_counter}')
     else:
-        print(f'The nearest number is >> {number - scounter}')
+        print(f'The nearest number is >> {number - small_counter}')
 
 
 list1 = create_list(30)
