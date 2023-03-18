@@ -41,7 +41,7 @@ scores = {1: "А, В, Е, И, Н, О, Р, С, Т, A, E, I, O, U, L, N, S, T, R",
           }
 
 
-def score_counter(string, dictionary=scores):
+def score_counter(string: str, dictionary: dict=scores):
     string = list(string.upper())
 
     counter = 0
@@ -53,6 +53,6 @@ def score_counter(string, dictionary=scores):
     print(f"String score is >> {counter}")
 
 
-string = 'ядерная ракета X-55'
+string = 'Клавиатура ROG Strix Flare'
 
 score_counter(string)
