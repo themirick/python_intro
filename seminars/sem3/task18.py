@@ -27,7 +27,7 @@ def closest_finder(list1, number):
 
     while flag:
         if list1[i] == number:
-            break
+            flag = False
 
         elif list1[i] < number and number - list1[i] < small_counter:
             small_counter = number - list1[i]
