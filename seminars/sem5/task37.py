@@ -14,5 +14,16 @@ Output: 4 3
 
 
 """
+from random import randint
 
-def reverser():
+
+def reverser(n):
+    if n == 0:
+        return
+    else:
+        element = randint(1, 10)
+        reverser(n - 1)
+        print(element)
+
+
+print(reverser(4))
