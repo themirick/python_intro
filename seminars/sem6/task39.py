@@ -18,28 +18,19 @@
 
 """
 from random import randint
-#
-#
-# def array_creater(length):
-#     result = [randint(1, 10) for i in range(length-1)]
-#     print(result)
-#     return result
-#
-#
-# def lists_compare(list1, list2):
-#     for i in list1:
-#         if i in list2:
-#             continue
-#         print(i, end=" ")
-#
-#
-# lists_compare(array_creater(5), array_creater(7))
 
-"""
-Дано натуральное число n>1. Выведите все простые множители 
-этого числа в порядке неубывания с учетом кратности. 
-Алгоритм должен иметь сложность O(logn).
 
-"""
+def array_creater(length):
+    result = [randint(1, 10) for i in range(length-1)]
+    print(result)
+    return result
 
-def cuter(n, i=2):
+
+def lists_compare(list1, list2):
+    for i in list1:
+        if i in list2:
+            continue
+        print(i, end=" ")
+
+
+lists_compare(array_creater(5), array_creater(7))
