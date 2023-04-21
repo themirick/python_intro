@@ -23,19 +23,33 @@
 """
 from random import randint
 
+# 1 2 3 4 5
+# 1+2+5=8
+# 1+2+3=6
+# 2+3+4=9
+# 3+4+5=12
+# 4+5+1=10
 
-def berry_picker(tree_count: int):
-    trees = [randint(1, 10) for i in range(tree_count)]
-    tree_berries = [trees[i-1] + trees[i] + trees[i + 1] for i in range(len(trees)-1)]
-    print(tree_berries)
-    print(max(tree_berries))
 
+def berry_picker(trees: int):
+    berries = [randint(1, 10) for i in range(trees)]
+    print(berries)
+
+    harvest = [berries[i] + berries[i-1] + berries[(i+1)%trees] for i in range(trees)]
+    print(harvest)
+    
+    print(f"Max berry count>> {max(harvest)}")
 
 
 berry_picker(5)
 
 
-#
+
+
+
+
+
+
 # from random import randint
 #
 #
