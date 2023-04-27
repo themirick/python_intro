@@ -20,7 +20,7 @@ def is_prime(number, i=2):
     elif i >= number / 2:
         return 'number is prime'
     elif number % i == 0:
-        return 'no'
+        return 'number is not prime'
 
     return is_prime(number, i + 1)
 
