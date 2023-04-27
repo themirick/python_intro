@@ -23,6 +23,7 @@ def marks_remaker(marks_list: list):
 
     # marks_list = [min(marks_list) if marks_list[i] is max(marks_list) else marks_list[i] for i in range(len(marks_list))]
 
+
     # for i in marks_list:
     #     if i == max(marks_list):
     #         marks_list[i] = min(marks_list)
@@ -35,3 +36,4 @@ def marks_remaker(marks_list: list):
 
 
 marks_remaker(marks)
+# Тут приведены несколько способов решения задачи
